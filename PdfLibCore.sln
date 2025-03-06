@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfLibCore", "src\PdfLibCore\PdfLibCore.csproj", "{30AE626B-48CC-42F7-8FBA-C4BCC379581F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleApp", "src\ExampleApp\ExampleApp.csproj", "{09AC490D-E1EB-442D-B48C-42DBE6EB6948}"
@@ -17,12 +20,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfLibCore.UnitTests", "src\UnitTests\PdfLibCore.UnitTests\PdfLibCore.UnitTests.csproj", "{AFCCC5F8-6BB1-466E-A69F-2EE2ADC59CFC}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4781BB81-D064-44FC-994D-9C2568A05560}"
-ProjectSection(SolutionItems) = preProject
-	LICENSE.txt = LICENSE.txt
-	README.md = README.md
-	tools\get_pdfium.sh = tools\get_pdfium.sh
-	tools\build_nuget.sh = tools\build_nuget.sh
-EndProjectSection
+	ProjectSection(SolutionItems) = preProject
+		tools\build_nuget.sh = tools\build_nuget.sh
+		tools\get_pdfium.sh = tools\get_pdfium.sh
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PdfLibCore.PdfPrint", "src\PdfLibCore.PdfPrint\PdfLibCore.PdfPrint.csproj", "{90261AB6-3E89-41FB-A03D-DC10B71622F7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +63,13 @@ Global
 		{AFCCC5F8-6BB1-466E-A69F-2EE2ADC59CFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFCCC5F8-6BB1-466E-A69F-2EE2ADC59CFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFCCC5F8-6BB1-466E-A69F-2EE2ADC59CFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90261AB6-3E89-41FB-A03D-DC10B71622F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90261AB6-3E89-41FB-A03D-DC10B71622F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90261AB6-3E89-41FB-A03D-DC10B71622F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90261AB6-3E89-41FB-A03D-DC10B71622F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AFCCC5F8-6BB1-466E-A69F-2EE2ADC59CFC} = {820F5B9F-0B28-41E1-8D72-243F000A2C1C}
